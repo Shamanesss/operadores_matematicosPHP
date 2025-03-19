@@ -60,7 +60,7 @@
 
     <div class="calculator">
         <h2>Calculadora</h2>
-        <form name="form" action="" method="POST">
+        <form name="form" action="calculadora.php" method="POST">
             <label for = "num1"></label>
             <input type="text" name="num1" placeholder="Número 1" required>
             <label for = "num2"></label>
@@ -72,39 +72,13 @@
                 <option value="multiplicacion">Multiplicación (*)</option>
                 <option value="division">División (/)</option>
                 <option value="modulo">Módulo (%)</option>
+                <option value="exponente">Exponente (**)</option>
+                <option value="incremento">Incremento (a++)</option>
+                <option value="decremento">Decremento (a--)</option>
             </select>
             <input type="submit" name="button" id="button" value="Calcular" onClick= "prueba">
         </form>
-        <?php
-            if(isset($_POST["button"]))
-            {
-                $numero1=$_POST["num1"];
-                $numero2=$_POST["num2"];
-                $operacion=$_POST["operacion"];
-
-                if(!strcmp("suma",$operacion))
-                {
-                    echo "El resultado es: " . ($numero1+$numero2);
-                }
-                if(!strcmp("resta",$operacion))
-                {
-                    echo "El resultado es: " . ($numero1-$numero2);
-                }
-                if(!strcmp("multiplicacion",$operacion))
-                {
-                    echo "El resultado es: " . ($numero1*$numero2);
-                }
-                if(!strcmp("division",$operacion))
-                {
-                    echo "El resultado es: " . ($numero1/$numero2);
-                }
-                if(!strcmp("modulo",$operacion))
-                {
-                    echo "El resultado es: " . ($numero1%$numero2);
-                }
-            }
-
-        ?>
+       
     </div>
 
 </body>
