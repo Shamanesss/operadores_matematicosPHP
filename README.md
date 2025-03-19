@@ -20,12 +20,21 @@ Los operadores matemáticos en PHP permiten realizar operaciones aritméticas co
 ## 🖥️ Ejemplo en PHP:
 
 ```php
-$a = 5;
 
-echo ++$a; // 6 (incrementa antes de usar)
-echo $a++; // 6 (usa el valor y luego incrementa)
-echo $a;   // 7 (ya está incrementado)
+$a = 10;
+$b = 3;
 
-echo --$a; // 6 (decrementa antes de usar)
-echo $a--; // 6 (usa el valor y luego decrementa)
-echo $a;   // 5 (ya está decrementado)
+echo $a + $b;  // 13
+echo $a - $b;  // 7
+echo $a * $b;  // 30
+echo $a / $b;  // 3.3333
+echo $a % $b;  // 1
+echo $a ** $b; // 1000
+
+echo ++$a; // 11 (incrementa antes de usar)
+echo $a++; // 11 (usa el valor y luego incrementa)
+echo $a;   // 12 (ya está incrementado)
+
+echo --$a; // 11 (decrementa antes de usar)
+echo $a--; // 11 (usa el valor y luego decrementa)
+echo $a;   // 10 (ya está decrementado)
